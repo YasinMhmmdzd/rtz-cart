@@ -21,7 +21,7 @@ function App() {
       <div className="app-footer">
         <Link to="/"><AiOutlineUnorderedList className="app-footer-icon "/></Link>
         <Link to="/add"><AiOutlinePlus className="app-footer-icon "/></Link>
-        <Link to="/"><AiOutlineShoppingCart className="app-footer-icon"/></Link>
+        <Link to="/cart"><AiOutlineShoppingCart className="app-footer-icon"/></Link>
       </div>
 
     </div>

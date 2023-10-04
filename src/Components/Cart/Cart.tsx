@@ -1,7 +1,9 @@
 
 function Cart() {
   return (
-    <div>Cart</div>
+    <div className="cart">
+      
+    </div>
   )
 }
 
