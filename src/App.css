@@ -23,14 +23,21 @@ body{
     position: fixed;
     bottom: 0;
     left: 0;
-    width: calc(100% - 30px);
-    padding: 15px;
+    width: calc(100% - 16px);
+    padding: 8px;
     display: flex;
     justify-content: space-around;
 }
 
 .app-footer-icon {
-    color: #bdc7c2;
+    color: #9ab7a8;
     font-size: 25px;
     font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 50%;
+}
+.app-footer-icon:hover{
+    background-color: #678675;
+    color: white;
 }
