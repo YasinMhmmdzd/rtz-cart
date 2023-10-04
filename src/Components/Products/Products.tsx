@@ -1,8 +1,11 @@
 import "./Product.css"
 import ProductItem from "./ProductItem/ProductItem"
-
+import useProductsStore from "../../Utils/Store/ProductStore"
 
 function Products() {
+
+  const products = useProductsStore((state) => state.cartState)
+
   return (
     <div className="products">
 
@@ -10,7 +13,11 @@ function Products() {
       <h4>Products</h4>
 
       <div className="products-container">
-        <ProductItem />
+        {
+          products.map((product) => (
+            <ProductItem />
+          ))
+        }
       </div>
 
     </div>
