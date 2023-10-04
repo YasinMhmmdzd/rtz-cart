@@ -7,7 +7,7 @@ function ProductItem() {
 
         <img src="./images/product.jpeg" />
 
-        <h5>Mac Book Pro</h5>
+        <h5>Mac Book</h5>
 
         <p>
             <BsCurrencyDollar />200.00
