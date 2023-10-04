@@ -1,0 +1,27 @@
+.add-product-form{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: calc(90% - 20px);
+    margin: 10px auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.add-product-form input{
+    all: unset;
+    text-align: left;
+    padding: 20px 5px;
+    width: 95%;
+    background-color: #4571;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: block;
+}
+.add-product-form button{
+    all: unset;
+    background-color: #7EAA92;
+    padding: 15px 5px;
+    width: 95%;
+    margin: 20px auto;
+    color: white;
+    border-radius: 10px;
+}

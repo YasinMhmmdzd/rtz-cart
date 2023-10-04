@@ -9,7 +9,7 @@ function AddProduct(){
                 Add new product
             </h3>
 
-            <form>
+            <form className="add-product-form">
 
                 <input type="text" placeholder="Product title"/>
                 <input type="text" placeholder="product price"/>
