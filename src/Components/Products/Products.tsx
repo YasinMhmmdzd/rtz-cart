@@ -1,10 +1,13 @@
 import "./Product.css"
-import ProductItem from "./ProductItem/ProductItem"
+// import ProductItem from "./ProductItem/ProductItem"
 import useProductsStore from "../../Utils/Store/ProductStore"
 
 function Products() {
 
   const products = useProductsStore((state) => state.cartState)
+
+  console.log(products);
+  
 
   return (
     <div className="products">
@@ -15,7 +18,8 @@ function Products() {
       <div className="products-container">
         {
           products.map((product) => (
-            <ProductItem />
+            // <ProductItem />
+            <p>Hello</p>
           ))
         }
       </div>
