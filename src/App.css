@@ -1,0 +1,36 @@
+@font-face {
+    font-family: couture;
+    src: url("../public/fonts/couture-bld.otf");
+}
+
+body{
+    font-family: couture;
+}
+
+*{
+    margin: 0;
+}
+
+.app-header{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+    font-size: 25px;
+    color: #7EAA92;
+}
+
+.app-footer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.app-footer-icon {
+    color: #bdc7c2;
+    font-size: 25px;
+    font-weight: bolder;
+}
