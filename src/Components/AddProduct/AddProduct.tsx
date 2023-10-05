@@ -13,7 +13,7 @@ function AddProduct(){
 
     const addProduct = (e:Event) =>{
         e.preventDefault();
-        addProductFunc({id:"1" , title:productTitle , price:productPrice})
+        addProductFunc({id:Math.ceil(Math.random() *1).toString() , title:productTitle , price:productPrice})
 
         setProductTitle("")
         setProdcutPrice("")

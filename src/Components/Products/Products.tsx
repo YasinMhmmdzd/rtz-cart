@@ -4,7 +4,7 @@ import useProductsStore from "../../Utils/Store/ProductStore"
 
 function Products() {
 
-  const products = useProductsStore((state) => state.cartState)
+  const products = useProductsStore((state) => state.product)
 
   console.log(products);
   
