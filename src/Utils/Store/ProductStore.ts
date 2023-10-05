@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { persist , devtools } from "zustand/middleware";
 type ProductState ={
     id:string , 
     title : string , 
@@ -15,7 +16,7 @@ type ProductActions = {
     deleteCart : (productId:ProductState['id']) => void 
 }
 
-const useProductsStore = create<CartState & ProductActions>((set) => ({
+const useProductsStore = create<CartState & ProductActions>(persist((set) => ({
     id:'',
     title: '',
     price : '',
@@ -23,6 +24,9 @@ const useProductsStore = create<CartState & ProductActions>((set) => ({
     addProduct : (product) => set((state)=>({cartState:[...state.cartState , product]})),
     addToCart : (product) => set((state) => ({cartState: [...state.cartState , product]})), 
     deleteCart : (productId) => set((state) => ({cartState: state.cartState.filter(product => product.id !== productId)})) 
-}))
+}), {
+    name : "productStore"
+})
+)
 
 export default useProductsStore;
