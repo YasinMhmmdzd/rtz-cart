@@ -20,13 +20,14 @@ body{
 
 .app-footer{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    position: fixed;
+    position:fixed;
     bottom: 0;
     left: 0;
     width: calc(100% - 16px);
     padding: 8px;
     display: flex;
     justify-content: space-around;
+    background-color: white;
 }
 
 .app-footer-icon {

@@ -34,7 +34,7 @@ function AddProduct(){
                 <button type="submit">Add</button>
                 {
                     status === "success" && (
-                        <p style={{color:'green'}}>Product Added successfull :)</p>
+                        <p style={{color:'green' , width:'100%'}}>Product Added successfull :)</p>
                     )
                 }
 
