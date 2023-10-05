@@ -1,6 +1,7 @@
 import CartItem from "./CartItem/CartItem"
 import "./Cart.css"
 import useProductsStore from "../../Utils/Store/ProductStore"
+import {BsCurrencyDollar} from "react-icons/bs"
 
 function Cart() {
 
@@ -14,7 +15,7 @@ function Cart() {
 
   return (
     <div className="cart">
-      <h3>Cart : {sum}</h3>
+      <h3>Cart : <BsCurrencyDollar />{sum}</h3>
 
       <div className="cart-container">
         {cart.map((cartProduct) => (
