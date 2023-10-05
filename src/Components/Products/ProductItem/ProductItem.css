@@ -1,4 +1,5 @@
 .product-item{
+    position: relative;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     justify-content: space-between;
@@ -6,6 +7,27 @@
     padding: 15px;
     margin: 15px auto;
     border-radius: 10px;
+    transition: all -0.5s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+.product-item::after{
+  content: "";
+  background: #bbb;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.product-item:active::after{
+padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
 .product-item img{

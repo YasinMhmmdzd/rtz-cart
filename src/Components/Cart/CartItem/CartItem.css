@@ -7,15 +7,15 @@
     margin: 10px auto;
     border-radius: 10px;
 }
-.cart-item > * {
-    text-align: center;
-}
 .cart-product{
     display: flex;
     justify-content: space-around;
     width: 80%;
 }
-.cart-product h3{
+.cart-product p {
+    text-align: center;
+}
+.cart-product h3 {
     padding: 27px 0;
 }
 .cart-delete-icon{
