@@ -3,15 +3,15 @@ import {AiFillDelete} from 'react-icons/ai'
 
 import "./CartItem.css"
 
-function CartItem() {
+function CartItem(props:{id:string , title:string , price:string}) {
   return (
     <div className="cart-item">
         <div className="cart-product">
 
-        <h3>Mac Book</h3>
+        <h3>{props.title}</h3>
 
         <p>
-        <BsCurrencyDollar />200.00
+        <BsCurrencyDollar />{props.price}
         </p>
         </div>
 
