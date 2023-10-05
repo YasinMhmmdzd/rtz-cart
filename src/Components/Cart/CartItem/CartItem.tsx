@@ -2,8 +2,16 @@ import {BsCurrencyDollar} from "react-icons/bs"
 import {AiFillDelete} from 'react-icons/ai'
 
 import "./CartItem.css"
+import useProductsStore from "../../../Utils/Store/ProductStore"
 
 function CartItem(props:{id:string , title:string , price:string}) {
+
+  const deleteFunc = useProductsStore((state) => state.deleteCart)
+
+  const deleteCart = () =>{
+    deleteFunc(props.id)
+  }
+
   return (
     <div className="cart-item">
         <div className="cart-product">
@@ -15,7 +23,7 @@ function CartItem(props:{id:string , title:string , price:string}) {
         </p>
         </div>
 
-        <p>
+        <p onClick={deleteCart}>
             <AiFillDelete className="cart-delete-icon"/>
         </p>
 

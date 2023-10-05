@@ -27,7 +27,7 @@ const useProductsStore = create<Product & CartState & ProductActions>(persist((s
     cartState:[],
     product : [],
     addProduct : (product) => set((state)=>({product:[...state.product , product]})),
-    addToCart : (product) => set((state) => ({cartState: [...state.product , product]})), 
+    addToCart : (product) => set((state) => ({cartState: [...state.cartState , product]})), 
     deleteCart : (productId) => set((state) => ({cartState: state.cartState.filter(product => product.id !== productId)})) 
 }), {
     name : "productStore"
