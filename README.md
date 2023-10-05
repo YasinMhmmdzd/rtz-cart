@@ -1,6 +1,6 @@
-## rtz-cart
+# rtz-cart
 small cart single page web application using (React + Typesctipt + Zustand) with simple UI
-#for run project : 
+###for run project : 
 
 yarn : 
 ```
