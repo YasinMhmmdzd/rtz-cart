@@ -1,5 +1,5 @@
 import "./Product.css"
-// import ProductItem from "./ProductItem/ProductItem"
+import ProductItem from "./ProductItem/ProductItem"
 import useProductsStore from "../../Utils/Store/ProductStore"
 
 function Products() {
@@ -18,8 +18,7 @@ function Products() {
       <div className="products-container">
         {
           products.map((product) => (
-            // <ProductItem />
-            <p>Hello</p>
+            <ProductItem {...product}/>
           ))
         }
       </div>

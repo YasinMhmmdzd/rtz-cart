@@ -1,16 +1,16 @@
 import {BsCurrencyDollar} from "react-icons/bs"
 import "./ProductItem.css"
 
-function ProductItem() {
+function ProductItem(props:{title:string , price:string}) {
   return (
     <div className="product-item">
 
         <img src="./images/product.jpeg" />
 
-        <h5>Mac Book</h5>
+        <h5>{props.title}</h5>
 
         <p>
-            <BsCurrencyDollar />200.00
+            <BsCurrencyDollar />{props.price}
         </p>
 
     </div>
