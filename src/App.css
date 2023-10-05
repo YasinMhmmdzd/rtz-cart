@@ -18,6 +18,10 @@ body{
     color: #7EAA92;
 }
 
+.products , .add-product , .cart{
+    animation: fade-page 0.8s ease-in-out;
+}
+
 .app-footer{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position:fixed;
@@ -41,4 +45,13 @@ body{
 .app-footer-icon:hover{
     background-color: #678675;
     color: white;
+}
+
+@keyframes fade-page{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
